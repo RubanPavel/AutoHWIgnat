@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/AutoHWIgnat/static/css/main.3484ce38.css",
+    "main.js": "/AutoHWIgnat/static/js/main.b4e71fee.js",
+    "static/js/787.e671072e.chunk.js": "/AutoHWIgnat/static/js/787.e671072e.chunk.js",
+    "static/media/avatar.png": "/AutoHWIgnat/static/media/avatar.d947cb9d0d13765666b6.png",
+    "index.html": "/AutoHWIgnat/index.html",
+    "main.3484ce38.css.map": "/AutoHWIgnat/static/css/main.3484ce38.css.map",
+    "main.b4e71fee.js.map": "/AutoHWIgnat/static/js/main.b4e71fee.js.map",
+    "787.e671072e.chunk.js.map": "/AutoHWIgnat/static/js/787.e671072e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3484ce38.css",
+    "static/js/main.b4e71fee.js"
+  ]
+}
