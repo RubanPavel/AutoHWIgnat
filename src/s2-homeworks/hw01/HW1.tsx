@@ -5,6 +5,7 @@ import s2 from '../../s1-main/App.module.css'
 import FriendMessage from './friend-message/FriendMessage'
 import avatar from './avatar.png'
 
+
 /*
 * 1 - описать тип MessageType
 * 2 - описать тип MessagePropsType в файле Message.tsx
@@ -34,7 +35,7 @@ export const message0: MessageType = {
         name: 'Some Name',  // можно менять
     },
     message: {
-        text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
+        text: 'some textsome textsome textsome textsome textsome textsome text some textsome textsome textsome textsome textsome textsome text some textsome textsome textsome textsome textsome textsome text', // можно менять
         time: '22:00', // можно менять
     },
 }
@@ -45,7 +46,7 @@ export const friendMessage0: MessageType = {
         name: 'Friend Name', // можно менять
     },
     message: {
-        text: 'зеркальное сообщение для тренировки css', // можно менять
+        text: 'зеркальное сообщение для тренировки css some textsome textsome textsome textsome textsome textsome text some textsome textsome textsome textsome textsome textsome text ', // можно менять
         time: '22:00', // можно менять
     },
 }
@@ -59,6 +60,7 @@ const HW1 = () => {
                 <div>
                     <Message message={message0} />
                     <FriendMessage message={friendMessage0} />
+
                 </div>
 
                 {/*для автоматической проверки дз (не менять)*/}

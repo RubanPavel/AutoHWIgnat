@@ -1,16 +1,25 @@
 .message {
-
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
 }
 
 .imageAndText {
-
+    display: flex;
+    align-items: flex-end;
 }
 
 .imageAndText img {
+    width: 48px;
+    height: 48px;
+
 
 }
 
 .text {
+    background-color: rgba(245, 247, 251, 1);
+    border-radius: 10px 10px 10px 0;
+    width: 55%;
 
 }
 
@@ -18,14 +27,35 @@
 
 }
 
+.angleMessage {
+    z-index: 2500;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle at 0% 0%, rgba(0, 0, 0, 0) 20px, rgba(245, 247, 251, 1) 0);
+}
+
 .name {
 
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    padding-left: 15px;
 }
 
 .messageText {
 
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    white-space: normal;
+    word-wrap: break-word;
+    padding: 0 15px 0 15px;
 }
 
 .time {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 12px;
+    padding-left: 10px;
 
 }
