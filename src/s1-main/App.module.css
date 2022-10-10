@@ -1,5 +1,6 @@
 
 .App {
+
     --header_height: 60px;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -11,7 +12,7 @@
 }
 
 .hw {
-
+    padding: 0px 15px;
     width: 100vw;
     display: flex;
     flex-direction: column;
