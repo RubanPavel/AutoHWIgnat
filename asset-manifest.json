@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/AutoHWIgnat/static/css/main.76d6d7c1.css",
-    "main.js": "/AutoHWIgnat/static/js/main.70633d6a.js",
+    "main.css": "/AutoHWIgnat/static/css/main.3ff32c67.css",
+    "main.js": "/AutoHWIgnat/static/js/main.77384dd0.js",
     "static/js/787.e671072e.chunk.js": "/AutoHWIgnat/static/js/787.e671072e.chunk.js",
     "static/media/avatar.png": "/AutoHWIgnat/static/media/avatar.d947cb9d0d13765666b6.png",
     "index.html": "/AutoHWIgnat/index.html",
-    "main.76d6d7c1.css.map": "/AutoHWIgnat/static/css/main.76d6d7c1.css.map",
-    "main.70633d6a.js.map": "/AutoHWIgnat/static/js/main.70633d6a.js.map",
+    "main.3ff32c67.css.map": "/AutoHWIgnat/static/css/main.3ff32c67.css.map",
+    "main.77384dd0.js.map": "/AutoHWIgnat/static/js/main.77384dd0.js.map",
     "787.e671072e.chunk.js.map": "/AutoHWIgnat/static/js/787.e671072e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76d6d7c1.css",
-    "static/js/main.70633d6a.js"
+    "static/css/main.3ff32c67.css",
+    "static/js/main.77384dd0.js"
   ]
 }
