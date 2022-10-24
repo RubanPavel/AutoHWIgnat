@@ -4,10 +4,10 @@ import {UserType} from "./HW3";
 
 type GreetingPropsType = {
     name: string // need to fix any
-    setNameCallback: (e: ChangeEvent<HTMLInputElement>)=>void // need to fix any
+    setNameCallback: (e: ChangeEvent<HTMLInputElement>) => void // need to fix any
     addUser: () => void // need to fix any
     onBlur: () => void // need to fix any
-    onEnter: (e:KeyboardEvent<HTMLInputElement>) => void // need to fix any
+    onEnter: (e: KeyboardEvent<HTMLInputElement>) => void // need to fix any
     error: string // need to fix any
     totalUsers: number // need to fix any
     lastUserName?: any // need to fix any
@@ -36,6 +36,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                 {'Людей добавили: '}
                 <span id={'hw3-users-total'}>
                     {totalUsers}
+
                 </span>
             </div>
 
