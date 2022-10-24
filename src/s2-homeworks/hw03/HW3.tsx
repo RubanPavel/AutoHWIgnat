@@ -23,7 +23,7 @@ export type UserType = {
     name: string // need to fix any
 }
 
-export const pureAddUserCallback = (name: string, setUsers: Function, users: UserType[]) => { // need to fix any
+export const pureAddUserCallback = (name: string, setUsers:(users:Array<UserType>)=>void, users: Array<UserType>) => { // need to fix any
     const user = {
         _id:v1(),
         name

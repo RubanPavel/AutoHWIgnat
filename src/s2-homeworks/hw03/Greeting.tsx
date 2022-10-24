@@ -11,6 +11,7 @@ type GreetingPropsType = {
     error: string // need to fix any
     totalUsers: number // need to fix any
     lastUserName?: any // need to fix any
+
 }
 
 
@@ -61,6 +62,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                 >
                     add
                 </button>
+
             </div>
 
             {lastUserName && (
