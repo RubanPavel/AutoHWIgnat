@@ -4,7 +4,7 @@
 }
 
 .input {
-    border: 1px solid #D1D1D1;
+    border: 1px solid black;
     border-radius: 5px;
     box-sizing: border-box;
     width: 372px;
@@ -13,11 +13,12 @@
 
 .inputWrapper {
 
+
 }
 
 .superInput {
     padding-left: 10px;
-    border: 1px solid #D1D1D1;
+    border: 1px solid black;
     border-radius: 5px;
     box-sizing: border-box;
     width: 372px;
@@ -30,7 +31,7 @@
 }
 
 .errorInput:focus {
-    border: 1px solid #CC1439;
+    border: 5px solid red;
     border-radius: 5px;
 }
 
