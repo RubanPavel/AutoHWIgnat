@@ -9,8 +9,8 @@ import {Provider} from 'react-redux'
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
     <React.StrictMode>
-        //Добавил сам, только для HW1
-        <App />
+
+        <App/>
         {/*для дз 10*/}
         {/*<Provider store={store}>
             <App/>
