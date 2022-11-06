@@ -5,7 +5,7 @@
     align-items: center;
     padding: 5px 24px;
     gap: 10px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -15,14 +15,14 @@
     height: 30px;
 
     /* Primary/100 */
-    background: grey;
+    background: #0066CC;
     border-radius: 3px;
-    border: 1px solid grey;
+    border: 1px solid #0066CC;
 
 }
 
 .disabled {
-    background: lightblue;
+    background: #004D99;
     opacity: 0.5;
     border-radius: 3px;
 }
@@ -35,26 +35,24 @@
 }
 
 .default {
-    background: greenyellow;
+    background: #0066CC;
     border-radius: 3px;
-    border: 1px solid greenyellow;
+    border: 1px solid #0066CC;
 }
 
 .red {
-    background: red;
+    background: #CC1439;
     border-radius: 3px;
-    border: 1px solid red;
+    border: 1px solid #CC1439;
 }
 
 .default:hover {
-    background: green;
+    background: #0080FF;
     border-radius: 3px;
-    left: -50%;
-
 }
 
 .red:hover {
-    background: indianred;
+    background: #FF1A47;
     border-radius: 3px;
 }
 
@@ -66,7 +64,7 @@
 
 
 .default:active {
-    background: darkgreen;
+    background: #0059B3;
     border-radius: 3px;
 }
 
@@ -77,12 +75,12 @@
 }
 
 .red:active {
-    background: darkred;
+    background: #B31232;
     border-radius: 3px;
 }
 
 .button:disabled {
-    background: lightblue;
+    background: #004D99;
     opacity: 0.5;
     border-radius: 3px;
 }

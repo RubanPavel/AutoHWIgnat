@@ -4,11 +4,10 @@
 }
 
 .input {
-    border: 1px solid black;
-    border-radius: 5px;
-    box-sizing: border-box;
+    padding-left: 10px;
     width: 372px;
     height: 36px;
+    border-radius: 5px;
 }
 
 .inputWrapper {
@@ -18,8 +17,8 @@
 
 .superInput {
     padding-left: 10px;
-    border: 1px solid black;
-    border-radius: 5px;
+
+
     box-sizing: border-box;
     width: 372px;
     height: 36px;
@@ -31,12 +30,12 @@
 }
 
 .errorInput:focus {
-    border: 5px solid red;
+    border: 1px solid red;
     border-radius: 5px;
 }
 
 .error {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
