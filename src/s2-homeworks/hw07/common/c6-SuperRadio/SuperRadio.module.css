@@ -1,14 +1,23 @@
 .radio {
+
+
+
 }
 
 .radio::before {
+
 }
 
 
 .radio:checked::before {
+
 }
 
 .label {
+    display: flex;
+    width: 120%;
+
+
 }
 
 .options {
