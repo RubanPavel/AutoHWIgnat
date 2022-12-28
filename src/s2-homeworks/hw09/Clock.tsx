@@ -14,7 +14,7 @@ function Clock() {
         stop()
         const id:number = window.setInterval(()=>{
             setDate(new Date())
-        }, 1000)
+        }, 10000)
         setTimerId(id)
 
         // пишут студенты // запустить часы (должно отображаться реальное время, а не +1)
@@ -37,7 +37,11 @@ function Clock() {
     }
 
     /*const stringTime = date.getHours() +':'+ date.getMinutes() +':'+ date.getSeconds()  || <br/>*/
-    const stringTime = date.toLocaleTimeString() || <br/>
+
+    /*const stringTime = date.toLocaleTimeString() || <br/>*/
+
+    const stringTime = date.getHours() +':'+ date.getMinutes() || <br/>
+
        /* ['ru-Ru'], {hour: '2-digit', minute:'2-digit'}*/
 
 
@@ -63,7 +67,7 @@ function Clock() {
                 onMouseLeave={onMouseLeave}
             >
                 <span id={'hw9-day'}>{stringDay}</span>,{' '}
-                <span id={'hw9-time'}><strong>{stringTime}</strong></span>
+                <span id={'hw9-time'}>{stringTime}</span>
             </div>
 
             <div id={'hw9-more'}>
