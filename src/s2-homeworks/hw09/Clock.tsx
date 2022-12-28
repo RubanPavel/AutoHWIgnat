@@ -37,7 +37,7 @@ function Clock() {
     }
 
     /*const stringTime = date.getHours() +':'+ date.getMinutes() +':'+ date.getSeconds()  || <br/>*/
-    const stringTime = date.toLocaleTimeString() || <br/>
+    const stringTime = date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}) || <br/>
 
 
     // часы24:минуты:секунды (01:02:03)/(23:02:03)/(24:00:00)/(00:00:01) // пишут студенты
