@@ -37,7 +37,7 @@ function Clock() {
     }
 
     /*const stringTime = date.getHours() +':'+ date.getMinutes() +':'+ date.getSeconds()  || <br/>*/
-    const stringTime = date.toLocaleTimeString() || <br/>
+    const stringTime = date.toLocaleTimeString('ru-Ru') || <br/>
 
 
     /*const stringTime = date.getHours() +':'+ date.getMinutes() || <br/>*/
