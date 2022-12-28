@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import SuperButton from '../hw04/common/c2-SuperButton/SuperButton'
 import {restoreState} from '../hw06/localStorage/localStorage'
 import s from './Clock.module.css'
-import internal from "stream";
+
 
 function Clock() {
     const [timerId, setTimerId] = useState<number | undefined>(undefined)
@@ -14,7 +14,7 @@ function Clock() {
         stop()
         const id:number = window.setInterval(()=>{
             setDate(new Date())
-        }, 10000)
+        }, 1000)
         setTimerId(id)
 
         // пишут студенты // запустить часы (должно отображаться реальное время, а не +1)
@@ -37,15 +37,15 @@ function Clock() {
     }
 
     /*const stringTime = date.getHours() +':'+ date.getMinutes() +':'+ date.getSeconds()  || <br/>*/
-
     /*const stringTime = date.toLocaleTimeString() || <br/>*/
 
-    const stringTime = date.getHours() +':'+ date.getMinutes() || <br/>
+    const stringTime = date.getMinutes() +':'+ date.getSeconds()  || <br/>
 
-       /* ['ru-Ru'], {hour: '2-digit', minute:'2-digit'}*/
-
+    /*const stringTime = date.getHours() +':'+ date.getMinutes() || <br/>*/
+    /* ['ru-Ru'], {hour: '2-digit', minute:'2-digit'}*/
 
     // часы24:минуты:секунды (01:02:03)/(23:02:03)/(24:00:00)/(00:00:01) // пишут студенты
+
   /*  const stringDate =  date.getDate() +'.'+ date.getMonth() +'.'+ date.getFullYear()|| <br/>*/
     const stringDate =  date.toLocaleDateString('ru-Ru')|| <br/>
 
@@ -67,7 +67,7 @@ function Clock() {
                 onMouseLeave={onMouseLeave}
             >
                 <span id={'hw9-day'}>{stringDay}</span>,{' '}
-                <span id={'hw9-time'}>{stringTime}</span>
+                <span id={'hw9-time'}><strong>{stringTime}</strong></span>
             </div>
 
             <div id={'hw9-more'}>
