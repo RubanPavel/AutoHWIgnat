@@ -25,6 +25,10 @@ const HW10 = () => {
 
     let isLoading = useSelector<AppStoreType, boolean>(state => state.loading.isLoading)
 
+    let isLoading2 = useSelector<AppStoreType, boolean>(state => state.loading.isLoading)
+
+    console.log(isLoading2)
+
 
     const setLoading = () => { // пишет студент // показать крутилку на 1,5 секунд
         // dispatch
