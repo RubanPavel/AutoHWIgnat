@@ -4,6 +4,7 @@
     background-color: rgba(25, 90, 211, 0.9);
     width: 30px;
     height: 30px;
+    border-radius: 50%;
     position: absolute;
 
 }
@@ -14,9 +15,12 @@
     left: 0;
     width: 30px;
     height: 30px;
+    border-radius: 50%;
     content: '';
     transition: all 1.5s ease-in-out;
+
 }
 body:hover .child::before {
     transform: translate(700%,0%);
+
 }

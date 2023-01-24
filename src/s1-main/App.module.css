@@ -12,12 +12,12 @@
 }
 
 .hw {
-    padding: 0px 15px;
+    padding: 0px 30px;
     width: 100vw;
     display: flex;
     flex-direction: column;
     background-color: white;
-    margin-left: 40px;
+   /* margin-left: 40px;*/
 
 
 }
