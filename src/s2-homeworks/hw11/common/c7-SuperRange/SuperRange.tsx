@@ -8,6 +8,7 @@ const SuperRange: React.FC<SliderProps> = (props) => {
                 width: 700,
                 paddingTop:20,
 
+
             }}
             {...props} // отдаём слайдеру пропсы если они есть (value например там внутри)
         />

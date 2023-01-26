@@ -12,29 +12,28 @@ import SuperRange from './common/c7-SuperRange/SuperRange'
 
 function HW11() {
     // for autotests // не менять // можно подсунуть в локалСторэдж нужные числа, чтоб увидеть как они отображаются
-    const [value1, setValue1] = useState(restoreState<number>('hw11-value1', 10))
 
-    const [value2, setValue2] = useState(restoreState<number | number[]>('hw11-value2', [10, 100]))
+
+    const [value1, setValue1] = useState(restoreState<number>('hw11-value1', 10))
+    console.log(value1 + 'value1')
+    const [value2, setValue2] = useState(restoreState<number[]>('hw11-value2', [value1, 100]))
+
+    console.log(value2 + 'value2')
 
 
     const change = (event: Event, newValue: number | number[]) => {
 
         if (Array.isArray(newValue)) {
-
             setValue2([newValue[0], newValue[1]])
-
-
+            setValue1(newValue[0])
         } else {
             setValue1(newValue)
 
         }
-
-
         // пишет студент // если пришёл массив - сохранить значения в оба useState, иначе в первый
     }
 
 
-    // @ts-ignore
     return (
 
         <div id={'hw11'}>
@@ -47,7 +46,8 @@ function HW11() {
                         <SuperRange
                             id={'hw11-single-slider'}
                             onChange={change}
-
+                            onClick={(event) => setValue1(value1)}
+                            color="primary"
                             value={value1}
                             valueLabelDisplay="on"
 
@@ -62,15 +62,16 @@ function HW11() {
                             id={'hw11-double-slider'}
                             onChange={change}
                             value={value2}
-
+                            onClick={(event) => setValue2([value2[0], value2[1]])}
+                            color="secondary"
                             valueLabelDisplay="on"
-                            /*   disableSwap*/
+
 
                             // сделать так чтоб value1/2 изменялось // пишет студент
 
                         />
 
-                        <span id={'hw11-value-2'} className={s.number}>{value2}</span>
+                        <span id={'hw11-value-3'} className={s.number}>{value2[1]}</span>
 
                     </div>
                 </div>
