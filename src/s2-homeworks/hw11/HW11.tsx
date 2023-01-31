@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import s from './HW11.module.css'
 import s2 from '../../s1-main/App.module.css'
 import {restoreState} from '../hw06/localStorage/localStorage'
@@ -15,25 +15,22 @@ function HW11() {
 
 
     const [value1, setValue1] = useState(restoreState<number>('hw11-value1', 10))
-    console.log(value1 + 'value1')
-    const [value2, setValue2] = useState(restoreState<number[]>('hw11-value2', [value1, 100]))
-
-    console.log(value2 + 'value2')
+    console.log(value1 + '---- value1')
+    const [value2, setValue2] = useState(restoreState<number>('hw11-value2', 100))
+    console.log(value2 + '---- value2')
 
 
     const change = (event: Event, newValue: number | number[]) => {
 
         if (Array.isArray(newValue)) {
-            setValue2([newValue[0], newValue[1]])
+
+            setValue2(newValue[1])
             setValue1(newValue[0])
         } else {
             setValue1(newValue)
-
         }
         // пишет студент // если пришёл массив - сохранить значения в оба useState, иначе в первый
     }
-
-
     return (
 
         <div id={'hw11'}>
@@ -47,31 +44,26 @@ function HW11() {
                             id={'hw11-single-slider'}
                             onChange={change}
                             onClick={(event) => setValue1(value1)}
-                            color="primary"
+
                             value={value1}
-                            valueLabelDisplay="on"
-
-
+                            valueLabelDisplay="off"
                             // сделать так чтоб value1 изменялось // пишет студент
-
                         />
                     </div>
+
                     <div className={s.wrapper}>
                         <span id={'hw11-value-1'} className={s.number}>{value1}</span>
                         <SuperRange
                             id={'hw11-double-slider'}
                             onChange={change}
-                            value={value2}
-                            onClick={(event) => setValue2([value2[0], value2[1]])}
-                            color="secondary"
-                            valueLabelDisplay="on"
+                            value={[value1, value2]}
+                            // onClick={(event) => setValue2([value2[0], value2[1]])}
 
-
+                            valueLabelDisplay="off"
                             // сделать так чтоб value1/2 изменялось // пишет студент
-
                         />
 
-                        <span id={'hw11-value-3'} className={s.number}>{value2[1]}</span>
+                        <span id={'hw11-value-2'} className={s.number}>{value2}</span>
 
                     </div>
                 </div>

@@ -1,12 +1,15 @@
 import React from 'react'
 import {Slider, SliderProps} from '@mui/material'
 
+
 const SuperRange: React.FC<SliderProps> = (props) => {
     return (
         <Slider
             sx={{
-                width: 700,
-                paddingTop:20,
+                width: 150,
+                paddingTop: 5,
+                color: '#52af77',
+                height: 8,
 
 
             }}
