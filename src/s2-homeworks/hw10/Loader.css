@@ -1,4 +1,6 @@
-
+.parent{
+    height: 30px;
+}
 
 .child {
     background-color: rgba(25, 90, 211, 0.9);
@@ -6,6 +8,7 @@
     height: 30px;
     border-radius: 50%;
     position: absolute;
+
 
 }
 .child::before {
@@ -17,7 +20,7 @@
     height: 30px;
     border-radius: 50%;
     content: '';
-    transition: all 1.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 
 }
 body:hover .child::before {
