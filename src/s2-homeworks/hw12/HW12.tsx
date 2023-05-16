@@ -22,17 +22,10 @@ const themes = [
 const HW12 = () => {
     const dispatch = useDispatch()
 
-
-    // взять ид темы из редакса
-    const rez = useSelector<AppStoreType, number>(state => state.theme.themeId)
-
-    const themeId = 1
+    const themeId = useSelector<AppStoreType, any>(state => state.theme.themeId)
 
     const change = (id: any) => {
-
         dispatch(changeThemeIdAC(id))
-        // дописать функцию
-
     }
 
     useEffect(() => {
@@ -40,21 +33,17 @@ const HW12 = () => {
     }, [themeId])
 
     return (
-        <div id={'hw12'}>
+      <div id={'hw12'}>
             <div id={'hw12-text'} className={s2.hwTitle}>
                 Homework #12
             </div>
 
             <div className={s2.hw}>
                 <SuperSelect
-                    id={'hw12-select-theme'}
-                    className={s.select}
-                    onClick={change}
-
-                    options={themes}
-
-                    // сделать переключение тем
-
+                  id={'hw12-select-theme'}
+                  className={s.select}
+                  onChangeOption={change}
+                  options={themes}
                 />
             </div>
         </div>
