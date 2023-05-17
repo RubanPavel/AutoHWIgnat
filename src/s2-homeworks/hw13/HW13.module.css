@@ -5,18 +5,28 @@
 }
 
 .responseContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imageContainer {
+    padding: 30px;
 }
 
 .image {
+
 }
 
 .textContainer {
+    padding: 30px;
+    width: 40%;
 }
 
 .code {
+    font-size: 26px;
+    padding-bottom: 15px;
+    font-weight: 700;
 }
 
 .text {
