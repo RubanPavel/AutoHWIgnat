@@ -15,9 +15,9 @@ function HW11() {
 
 
     const [value1, setValue1] = useState(restoreState<number>('hw11-value1', 10))
-    console.log(value1 + '---- value1')
+
     const [value2, setValue2] = useState(restoreState<number>('hw11-value2', 100))
-    console.log(value2 + '---- value2')
+
 
 
     const change = (event: Event, newValue: number | number[]) => {
