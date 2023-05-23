@@ -1,7 +1,11 @@
 .tech {
-
+    font-family: 'Montserrat', sans-serif;
 }
 
 .loading {
-
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Montserrat', sans-serif;
+    width: 350px;
+    font-size: 16px;
 }
