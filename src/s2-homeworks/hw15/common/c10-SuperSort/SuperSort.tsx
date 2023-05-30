@@ -58,7 +58,7 @@ const SuperSort: React.FC<SuperSortPropsType> = (
             <img
                 id={id + '-icon-' + sort}
                 src={icon} alt={'arrow'}
-                style={{width:'13px', marginLeft:'10px', marginTop:'10px'}}
+                style={{width:'13px'/*, marginLeft:'10px', marginTop:'10px'*/}}
 
             />
 
